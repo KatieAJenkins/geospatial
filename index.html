@@ -30,7 +30,7 @@
     ], function(Map, SceneView, Search) {
 
       var map = new Map({
-        basemap: "statellite",
+        basemap: "statellite", //topo, gray, statellite
         ground: "world-elevation"
       });
 
@@ -48,10 +48,10 @@
       searchWidget.startup();
 
 //Add search widget to top left corner of view
-view.ui.add(searchWidget, {
-  position: "top-left",
-  index: 0
-});
+      view.ui.add(searchWidget, {
+        position: "top-left",
+        index: 0
+      });
 
 //add a view for street view
 view.map.basemap = "streets";
